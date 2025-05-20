@@ -27,11 +27,13 @@ exports.updateReview = async (req, res) => {
 };
 
 exports.deleteReview = async (req, res) => {
-  const review = await Review.findById(req.params.id);
-  if (!review || review.user.toString() !== req.user._id.toString()) {
-    return res.status(403).json({ message: "Unauthorized" });
-  }
-
-  await review.remove();
-  res.json({ message: "Review deleted" });
-};
+    const review = await Review.findById(req.params.id);
+  
+    if (!review || review.user.toString() !== req.user._id.toString()) {
+      return res.status(403).json({ message: "Unauthorized" });
+    }
+  
+    await Review.deleteOne({ _id: review._id });
+    res.json({ message: "Review deleted" });
+  };
+  
