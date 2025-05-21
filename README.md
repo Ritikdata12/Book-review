@@ -62,6 +62,15 @@ BOOK-PROJ/
 ```
 
 
+---
+
+## 📦 .env
+
+MONGO_URI= Enter you MONGO_URI
+PORT=5000
+JWT_SECRET=supersecretkey
+---
+
 
 ---
 
