@@ -181,7 +181,9 @@ curl --location 'https://book-review-eight-dun.vercel.app/api/books/search?q=ama
 --data ''
 `
 
+```
 
+![image](https://github.com/user-attachments/assets/391f4123-6640-49c4-a6fd-113440f70244)
 
 
 
