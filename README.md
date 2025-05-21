@@ -29,7 +29,37 @@ A fully functional RESTful API for a Book Review Platform built with **Node.js**
 ---
 
 ## 📁 Project Structure
-
+```
+BOOK-PROJ/
+│
+├── config/
+│ └── db.js # Database connection setup
+│
+├── controllers/
+│ ├── authController.js # Handles user signup/login logic
+│ ├── bookController.js # Handles book CRUD logic
+│ └── reviewController.js # Handles review CRUD logic
+│
+├── middleware/
+│ └── authMiddleware.js # JWT authentication middleware
+│
+├── models/
+│ ├── Book.js # Book schema/model
+│ ├── Review.js # Review schema/model
+│ └── User.js # User schema/model
+│
+├── routes/
+│ ├── authRoutes.js # Routes for signup and login
+│ ├── bookRoutes.js # Routes for book operations
+│ └── reviewRoutes.js # Routes for review operations
+│
+├── .env # Environment variables
+├── .gitignore
+├── index.js # Main application entry point
+├── package.json
+├── package-lock.json
+└── vercel.json # Deployment config for Vercel
+```
 
 
 
