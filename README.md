@@ -84,15 +84,20 @@ JWT is used for securing routes. Store the token returned from `/login` and send
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/book-review-api.git
+https://github.com/Ritikdata12/Book-review.git
 cd book-review-api
 
 # Install dependencies
 npm install
 
-# Create .env file
-touch .env
+# Install .env file
+npm i dotenv
 
+# create  .env file
+  touch .env
+
+# run coomand to run the project
+  npx nodemon
 ```
 
 ## 📦 Api Endpoints
